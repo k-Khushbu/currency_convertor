@@ -1,6 +1,6 @@
 import React, { useId } from "react";
 
-const InputBox = ({
+const InputFields = ({
   label,
   amount,
   onAmountChange,
@@ -53,4 +53,4 @@ const InputBox = ({
   );
 };
 
-export default InputBox;
+export default InputFields;

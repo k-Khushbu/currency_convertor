@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useCurrencyInfo from "./hooks/useCurrencyInfo";
-import InputBox from "./components/inputBox";
+import InputFields from "./components/InputFields";
+
 function App() {
   const [amount, setAmount] = useState(0);
   const [from, setFrom] = useState("usd");
@@ -54,7 +55,7 @@ function App() {
               }}
             >
               <div className="w-full mb-1">
-                <InputBox
+                <InputFields
                   label="From"
                   amount={amount}
                   currencyOptions={options}
@@ -74,7 +75,7 @@ function App() {
                 </button>
               </div>
               <div className="w-full mt-1 mb-4">
-                <InputBox
+                <InputFields
                   label="To"
                   amount={convertedAmount}
                   currencyOptions={options}
